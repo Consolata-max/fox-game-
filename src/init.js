@@ -1,6 +1,9 @@
 import game from "./gamestate";
+import initButtons from "./buttons";
+import { TICK_RATE } from "./constants";
 
-const TICK_RATE = 3000;
+initButtons(game.handleUserAction);
+
 
 async function init(){
     console.log('starting game');
